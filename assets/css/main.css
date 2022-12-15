@@ -1453,7 +1453,7 @@ input, select, textarea {
 	form input[type=password],
 	form select,
 	form textarea {
-		-webkit-appearance: none;
+		appearance: none;
 		display: block;
 		border: 0;
 		padding: 0.75em 1em;
@@ -1611,7 +1611,7 @@ input, select, textarea {
 	input[type="reset"],
 	button,
 	.button {
-		-webkit-appearance: none;
+		appearance: none;
 		display: inline-block;
 		text-decoration: none;
 		cursor: pointer;
@@ -2273,11 +2273,12 @@ input, select, textarea {
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: center;
-		margin-bottom: 1em;
+		margin-bottom: 1.5em;
 		
 		height: 100px;
 		width: inherit;
 	}
+
 
 	.background > img {
 		height: 8em;
@@ -2336,6 +2337,12 @@ input, select, textarea {
 			#footer header h2 {
 				font-size: 1.75em;
 			}
+	
+	form label {
+		color: #FFFFFF;
+		position: relative;
+		top: 1.5em;
+	}
 
 /* Copyright */
 
