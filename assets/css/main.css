@@ -133,10 +133,15 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h4, h5, h6 {
 		color: #f5f5f5;
 		font-weight: 700;
 	}
+
+	/* h3, h3+p {
+		color: #000000;
+		font-weight: 700;
+	} */
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
@@ -2266,6 +2271,13 @@ input, select, textarea {
 
 		.about-me-subsection > p {
 			font-size: 1.3em;
+		}
+
+	.box > header > h3, .box > p {
+		color: #000000;
+	}
+		.box > header > h3{
+			font-weight: 700;
 		}
 
 	.my-technologies {
