@@ -181,26 +181,6 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
-	/* Form  */
-
-	/* The popup form - hidden by default */
-  .form-popup {
-	display: flex;
-	position: fixed;
-	inset: 5em;
-	border: 3px solid #f1f1f1;
-	z-index: 9;
-	
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-	width: 100%;
-	height: 100%;
-	padding: 10px;
-	background-color: white;
-  }
-
 /* Container */
 
 	.container {
@@ -1469,7 +1449,7 @@ input, select, textarea {
 	form label {
 		display: block;
 		color: #252122;
-		font-weight: 400;
+		font-weight: 500;
 		margin: 0 0 0.5em 0;
 	}
 
@@ -1487,6 +1467,8 @@ input, select, textarea {
 		border: solid 1px #dddddd;
 		background: #fff;
 		width: 100%;
+		color: black;
+		font-family: inherit;
 	}
 
 		form input[type=text]:focus,
@@ -2062,10 +2044,32 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background: #ffffff;
 		padding: 5em 0 4em 0;
 		text-align: center;
+		background: #CCE8F4 linear-gradient(90deg, #2c2c2c, #000000, #171717, #464646, #555555, #6f6f6f, #848484, #a2a2a2, #d1d1d1, #ffffff);
+
+		background-size: 2000% 2000%;
+	
+		-webkit-animation: AnimationName 54s ease infinite;
+		-moz-animation: AnimationName 54s ease infinite;
+		animation: AnimationName 54s ease infinite;
 	}
+
+		@-webkit-keyframes AnimationName {
+			0%{background-position:0% 51%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 51%}
+		}
+		@-moz-keyframes AnimationName {
+			0%{background-position:0% 51%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 51%}
+		}
+		@keyframes AnimationName {
+			0%{background-position:0% 51%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 51%}
+		}
 
 		#header h1 {
 			margin-top: 1em;
@@ -2190,35 +2194,10 @@ input, select, textarea {
 		background-position: center center;
 		background-repeat: no-repeat;
 		text-align: center;
-		justify-content: center;
 		position: relative;
 		padding: 8em 0;
 		margin: 0;
-
-		background: #CCE8F4 linear-gradient(90deg, #2c2c2c, #000000, #171717, #464646, #555555, #6f6f6f, #848484, #a2a2a2, #d1d1d1, #ffffff);
-
-		background-size: 2000% 2000%;
-	
-		-webkit-animation: AnimationName 54s ease infinite;
-		-moz-animation: AnimationName 54s ease infinite;
-		animation: AnimationName 54s ease infinite;
 	}
-
-		@-webkit-keyframes AnimationName {
-			0%{background-position:0% 51%}
-			50%{background-position:100% 50%}
-			100%{background-position:0% 51%}
-		}
-		@-moz-keyframes AnimationName {
-			0%{background-position:0% 51%}
-			50%{background-position:100% 50%}
-			100%{background-position:0% 51%}
-		}
-		@keyframes AnimationName {
-			0%{background-position:0% 51%}
-			50%{background-position:100% 50%}
-			100%{background-position:0% 51%}
-		}
 
 		#banner header {
 			background-color: rgba(34, 30, 31, 0.98);
@@ -2230,16 +2209,16 @@ input, select, textarea {
 			#banner header h1 {
 				color: #fff;
 				font-weight: 700;
-				font-size: 2.5em;
+				font-size: 3.5em;
 				margin: 0 0 0.65em 0;
 			}
 
 			#banner header p {
 				color: #d52349;
-				padding: 0;
+				padding-top: .5em;
 				font-style: normal;
 				margin: 0;
-				font-size: 1.5em;
+				font-size: 1.75em;
 			}
 
 /* Main */
@@ -2307,16 +2286,35 @@ input, select, textarea {
 		align-items: center;
 		margin-bottom: 1.5em;
 		
-		height: 100px;
+		height: auto;
 		width: inherit;
+		gap: 1em;
 	}
 
+	.background {
+		aspect-ratio: 1/1;
+		object-fit: contain;
+		background-color: whitesmoke;
+		border-radius: 5px;
+		color: black;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	.background > img {
-		height: 8em;
-		width: 8em;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		height: 7em;
+		width: 7em;
 		object-fit: contain;
 		overflow: none;
+		aspect-ratio: 1/1;
+		object-fit: contain;
 	}
 
 /* Footer */
