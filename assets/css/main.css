@@ -181,6 +181,26 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+	/* Form  */
+
+	/* The popup form - hidden by default */
+  .form-popup {
+	display: flex;
+	position: fixed;
+	inset: 5em;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+	
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	background-color: white;
+  }
+
 /* Container */
 
 	.container {
