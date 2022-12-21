@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #252122;
+		background: black;
 		background-image: url("images/bg02.png");
 	}
 
@@ -1538,10 +1538,6 @@ input, select, textarea {
 		margin-bottom: 2.5em;
 	}
 
-		section > :last-child, section:last-child, article > :last-child, article:last-child {
-			margin-bottom: 0;
-		}
-
 	header {
 		margin: 0 0 1.5em 0;
 	}
@@ -1556,14 +1552,12 @@ input, select, textarea {
 		header.major {
 			position: relative;
 			text-align: center;
-			/* border-top: solid 1px #ccc; */
 			top: 1em;
 			margin: 0 0 3em 0;
 			padding-top: 6em;
 		}
 
 			header.major h2 {
-				background: #fff;
 				position: relative;
 				top: -0.65em;
 				display: inline;
@@ -1724,6 +1718,11 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+
+			.my-picture {
+				aspect-ratio: 1/1;
+				object-fit: contain;
+			}
 
 		.image.left {
 			float: left;
@@ -2200,7 +2199,7 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.98);
+			background-color: rgba(34, 30, 31);
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
@@ -2246,11 +2245,6 @@ input, select, textarea {
 			color: white
 		}
 
-	.about-me {
-		display: flex;
-		width: 100%;
-	}
-
 	.image-container {
 		height: 70vh;
 		width: auto;
@@ -2261,16 +2255,6 @@ input, select, textarea {
 		height: inherit;
 		width: inherit;
 	}
-
-	.about-me-subsection {
-		height: auto;
-		width: 40vw;
-		margin: 5em;
-	}
-
-		.about-me-subsection > p {
-			font-size: 1.3em;
-		}
 
 	.box > header > h3, .box > p {
 		color: #000000;
@@ -2321,8 +2305,8 @@ input, select, textarea {
 
 	#footer {
 		position: relative;
-		color: #858484;
 		padding: 4em 0;
+		background-color: rgb(67, 67, 67);
 	}
 
 		#footer:before {
@@ -2882,6 +2866,10 @@ input, select, textarea {
 
 			#footer {
 				padding: 40px 0 20px 0;
+			}
+
+			.row > .col-4 {
+
 			}
 
 	}
