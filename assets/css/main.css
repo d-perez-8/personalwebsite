@@ -1710,13 +1710,9 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
+			width: 50%;
+			margin: 2em auto;
 		}
-
-			.my-picture {
-				object-fit: contain;
-			}
 
 		.image.left {
 			float: left;
@@ -2063,14 +2059,13 @@ input, select, textarea {
 
 	#nav {
 		margin: 0 0 0 0;
-		padding: 0.7em 0;
+		padding: 0.7em 0 0 0;
 		width: 100%;
 		position: fixed;
 		top: 0;
 		z-index: 100;
 		padding-inline-start: 0;
   		margin-block: 0;
-
 		background-color: black;
 	}
 
@@ -2086,6 +2081,16 @@ input, select, textarea {
 				margin: 0 0.35em 0 0.35em;
 
 			}
+
+				#nav > ul > li:first-child {
+					float: left;
+					background: none;
+				}
+
+				#nav > ul > li > a:first-child {
+					background: none;
+				}
+
 
 				#nav > ul > li > ul {
 					display: none;
@@ -2244,18 +2249,6 @@ input, select, textarea {
 			font-weight: 700;
 		}
 
-	.my-technologies {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		align-items: center;
-		margin-bottom: 1.5em;
-		
-		height: auto;
-		width: inherit;
-		gap: 1em;
-	}
-
 	.background {
 		aspect-ratio: 1/1;
 		object-fit: contain;
@@ -2266,6 +2259,10 @@ input, select, textarea {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.about-me {
+		padding: 2.75em 1.75em 2.75em 1.75em;
 	}
 
 	.background > img {
@@ -2280,6 +2277,18 @@ input, select, textarea {
 		overflow: none;
 		aspect-ratio: 1/1;
 		object-fit: contain;
+	}
+
+	.my-technologies {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-bottom: 1.5em;
+		
+		height: auto;
+		width: inherit;
+		gap: 1em;
 	}
 
 /* Intro */
@@ -2462,7 +2471,7 @@ input, select, textarea {
 
 			#banner {
 				height: 100vh;
-				padding: 15em 0;
+				padding: 13em 0;
 				margin: 0;
 			}
 
