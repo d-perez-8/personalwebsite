@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 @media (prefers-reduced-motion: no-preference) {
 	* {
@@ -83,7 +84,6 @@ input, select, textarea {
 	}
 
 	body {
-		background: black;
 		background-image: url("images/bg02.png");
 	}
 
@@ -99,7 +99,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro';
+		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #e9e9e9;
 		font-size: 14pt;
@@ -137,11 +137,6 @@ input, select, textarea {
 		color: #f5f5f5;
 		font-weight: 700;
 	}
-
-	/* h3, h3+p {
-		color: #000000;
-		font-weight: 700;
-	} */
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
@@ -1534,7 +1529,7 @@ input, select, textarea {
 
 /* Section/Article */
 
-	section, article {
+	section, article:not(-1) {
 		margin-bottom: 2.5em;
 	}
 
@@ -1720,7 +1715,6 @@ input, select, textarea {
 		}
 
 			.my-picture {
-				aspect-ratio: 1/1;
 				object-fit: contain;
 			}
 
@@ -1764,6 +1758,11 @@ input, select, textarea {
 
 			ul.actions li:first-child {
 				margin-left: 0;
+			}
+		
+			ul.frontpage li:first-child {
+				margin-left: 0;
+				padding-left: 5em;
 			}
 
 /* Links */
@@ -2044,31 +2043,8 @@ input, select, textarea {
 	#header {
 		position: relative;
 		padding: 5em 0 4em 0;
-		text-align: center;
-		background: #CCE8F4 linear-gradient(90deg, #2c2c2c, #000000, #171717, #464646, #555555, #6f6f6f, #848484, #a2a2a2, #d1d1d1, #ffffff);
-
-		background-size: 2000% 2000%;
-	
-		-webkit-animation: AnimationName 54s ease infinite;
-		-moz-animation: AnimationName 54s ease infinite;
-		animation: AnimationName 54s ease infinite;
+		background: black;
 	}
-
-		@-webkit-keyframes AnimationName {
-			0%{background-position:0% 51%}
-			50%{background-position:100% 50%}
-			100%{background-position:0% 51%}
-		}
-		@-moz-keyframes AnimationName {
-			0%{background-position:0% 51%}
-			50%{background-position:100% 50%}
-			100%{background-position:0% 51%}
-		}
-		@keyframes AnimationName {
-			0%{background-position:0% 51%}
-			50%{background-position:100% 50%}
-			100%{background-position:0% 51%}
-		}
 
 		#header h1 {
 			margin-top: 1em;
@@ -2192,24 +2168,27 @@ input, select, textarea {
 	#banner {
 		background-position: center center;
 		background-repeat: no-repeat;
-		text-align: center;
+		text-align: left;
 		position: relative;
 		padding: 8em 0;
 		margin: 0;
 	}
 
 		#banner header {
-			background-color: rgba(34, 30, 31);
+			background-color: none;
 			display: inline-block;
-			padding: 2.5em 5em;
+			padding: 0 5em;
 			border-radius: 5px;
 		}
 
 			#banner header h1 {
 				color: #fff;
+				font-family: 'Anton', 'Source Sans Pro', sans-serif;
 				font-weight: 700;
-				font-size: 3.5em;
-				margin: 0 0 0.65em 0;
+				font-size: 9em;
+				letter-spacing: 0.01rem;
+				margin: 0 0 0.3em 0;
+				text-align: left;
 			}
 
 			#banner header p {
@@ -2217,7 +2196,9 @@ input, select, textarea {
 				padding-top: .5em;
 				font-style: normal;
 				margin: 0;
-				font-size: 1.75em;
+				font-size: 2.5em;
+				text-align: left;
+
 			}
 
 /* Main */
@@ -2300,6 +2281,65 @@ input, select, textarea {
 		aspect-ratio: 1/1;
 		object-fit: contain;
 	}
+
+/* Intro */
+
+#intro {
+	text-align: center;
+	overflow: hidden;
+}
+
+	#intro section {
+		margin: 3em 0;
+		padding: 2.5em 0;
+	}
+
+	#intro h2 {
+		font-size: 1.75em;
+	}
+
+	#intro p {
+		margin: 0;
+		font-size: 1.25em;
+	}
+
+	#intro .middle {
+		position: relative;
+		z-index: 1;
+	}
+
+		#intro .middle:before {
+			content: '';
+			width: 32px;
+			height: 100%;
+			position: absolute;
+			left: -24px;
+			top: 0;
+			display: block;
+			z-index: -1;
+			box-shadow: 32px 0 0 0 #000, 0 -32px 0 0 #000, 0 32px 0 0 #000, 32px 32px 0 0 #000, 32px -32px 0 0 #000, 0 0 32px 0 rgba(128, 128, 128, 0.15);
+		}
+
+		#intro .middle:after {
+			content: '';
+			width: 32px;
+			height: 100%;
+			position: absolute;
+			right: -24px;
+			top: 0;
+			display: block;
+			z-index: -1;
+			box-shadow: -32px 0 0 0 #000, 0 -32px 0 0 #000, 0 32px 0 0 #000, -32px 32px 0 0 #000, -32px -32px 0 0 #000, 0 0 32px 0 rgba(128, 128, 128, 0.15);
+		}
+
+	#intro .button {
+		min-width: 12em;
+	}
+
+	#intro footer {
+		margin: 0;
+	}
+
 
 /* Footer */
 
