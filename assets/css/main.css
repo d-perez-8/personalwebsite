@@ -2042,6 +2042,10 @@ input, select, textarea {
 		background: black;
 	}
 
+	#header:last-child {
+		padding-bottom: 0;
+	}
+
 		#header h1 {
 			margin-top: 1em;
 			color: #252122;
