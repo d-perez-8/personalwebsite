@@ -2114,8 +2114,11 @@ input, select, textarea {
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
 					background: #f3f3f3;
-
 					color: black;
+				}
+
+				#nav > ul > li > a.web-logo {
+					background: none;
 				}
 
 				#nav > ul > li.current > a {
@@ -2662,7 +2665,7 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				color: #858484;
-				background-image: url("images/bg02.png");
+				background-color: rgba(10, 10, 10);
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
@@ -2675,6 +2678,11 @@ input, select, textarea {
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
 					padding: 0 1em 0 1em;
 					font-style: italic;
+				}
+
+				#navPanel .link:hover {
+					color: #d52349;
+					background-color: #827a7c;
 				}
 
 					#navPanel .link:first-child {
@@ -2781,7 +2789,7 @@ input, select, textarea {
 		/* Section/Article */
 
 			section, article {
-				margin-bottom: 20px;
+				margin-bottom: 0;
 			}
 
 			header {
