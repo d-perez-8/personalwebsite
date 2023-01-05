@@ -2769,6 +2769,11 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
+				ul.frontpage li:first-child {
+					margin-left: 0;
+					padding-left: 0;
+				}
+
 		/* Section/Article */
 
 			section, article {
@@ -2871,7 +2876,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				text-align: center;
+				text-align: left;
 				padding: 2em 0;
 			}
 
@@ -2902,7 +2907,7 @@ input, select, textarea {
 					}
 
 					#banner header p {
-						font-size: 1.2em;
+						font-size: 1.5em;
 					}
 
 		/* Main */
