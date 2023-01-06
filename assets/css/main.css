@@ -1710,8 +1710,15 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			width: 50%;
+			width: auto;
+			height: auto;
+			max-width: 55%;
 			margin: 2em auto;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			object-fit: cover;
 		}
 
 		.image.left {
@@ -2270,6 +2277,10 @@ input, select, textarea {
 
 	.about-me {
 		padding: 2.75em 1.75em 2.75em 1.75em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.background > img {
@@ -2279,11 +2290,10 @@ input, select, textarea {
 		align-items: center;
 
 		height: 7em;
-		width: 7em;
+		width: auto;
 		object-fit: contain;
 		overflow: none;
-		aspect-ratio: 1/1;
-		object-fit: contain;
+		object-fit: fill;
 	}
 
 	.my-technologies {
@@ -2932,10 +2942,6 @@ input, select, textarea {
 
 			#footer {
 				padding: 40px 0 20px 0;
-			}
-
-			.row > .col-4 {
-
 			}
 
 	}
