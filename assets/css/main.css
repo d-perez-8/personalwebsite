@@ -1951,13 +1951,22 @@ input, select, textarea {
 						background: #1075a9;
 					}
 
-				ul.social li a.fa-github {
+				ul.social li a.fa-github, ul.social li a.fa-angellist {
 					background: #000000;
 				}
 
-					ul.social li a.fa-github:hover {
-						background: rgb(65, 65, 65);
+					ul.social li a.fa-github:hover, ul.social li a.fa-angellist:hover {
+						background: rgb(40, 40, 40);
 					}
+				
+				ul.social li a.fa-twitter {
+					background: #1DA1F2;
+				}
+
+					ul.social li a.fa-twitter:hover {
+						background: #1075a9;
+					}
+
 
 /* Icons */
 
