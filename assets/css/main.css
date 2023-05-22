@@ -2501,7 +2501,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				height: 100vh;
+				height: 100%;
 				padding: 13em 0;
 				margin: 0;
 			}
