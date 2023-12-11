@@ -11,7 +11,7 @@ This is where I host my portfolio and projects, and where you can contact me!
 **Tech used:** 
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> & Netlify
 
-This is the first website I have created and hosted. Used HTML for the content and structure. CSS for styling and formatting. JavaSript for functionality. I chosed Netlify for its simpliciy and reputation amoungst free teir web hosting. My goal was to create a simple degined website for others to see my previous work and experience, to offer my services to others, and to make the site responsive.
+This is the first website I have created and hosted. Used HTML for the content and structure. CSS for styling and formatting. JavaScript for functionality. I chose Netlify for its simplicity and reputation amongst free tier web hosting. My goal was to create a simple design website for others to see my previous work and experience, to offer my services to others, and to make the site responsive.
 
 ## Optimizations
 
